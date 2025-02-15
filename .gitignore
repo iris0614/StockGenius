@@ -1,0 +1,19 @@
+# Ignore .env file
+.env
+
+# Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Streamlit cache
+.streamlit/
+
+# IDE files
+.vscode/
+.idea/
+
+# Data files
+*.db
+*.sqlite3

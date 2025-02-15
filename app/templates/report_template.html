@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Investment Analysis Report</title>
+</head>
+<body>
+    <h1>Investment Analysis Report</h1>
+    <p>Risk Level: {{ risk_level }}</p>
+    <p>Investment Horizon: {{ investment_duration }}</p>
+    <p>Investment Strategy: {{ investment_strategy }}</p>
+    <h2>Recommended Stocks</h2>
+    <ul>
+        {% for stock in recommended_stocks %}
+            <li>{{ stock }}</li>
+        {% endfor %}
+    </ul>
+    <h2>DCA Simulation Results</h2>
+    <p>Expected Annual Return: {{ annual_return }}%</p>
+    <p>Max Drawdown: {{ max_drawdown }}%</p>
+</body>
+</html>
